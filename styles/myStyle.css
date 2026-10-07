@@ -1,0 +1,1418 @@
+/* עד החופה — עיצוב האתר. הצבעים, הפונטים והמידות המקוריים נשמרו ככל האפשר. */
+
+/* בסיס האתר וניווט */
+body {
+    direction: rtl;
+    margin: 0;
+    background-color: #fff1f3;
+    color: #222222;
+    font-family: Arial, sans-serif;
+}
+
+#container {
+    width: 96%;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.site-header {
+    width: 100%;
+}
+
+.main-nav {
+    background-color: #9b3f4e;
+    display: flex;
+    align-items: center;
+    padding: 8px 30px;
+    position: relative;
+    gap: 15px;
+    flex-wrap: nowrap;
+}
+
+.main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    transform: translateX(100px);
+    flex-wrap: wrap;
+}
+
+.main-nav li {
+    margin: 0;
+}
+
+.main-nav ul a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 16px 12px;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.main-nav ul a:hover {
+    background-color: #b59a5a;
+}
+
+main {
+    text-align: center;
+    padding: 0;
+}
+
+section {
+    margin-bottom: 70px;
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+main a {
+    color: #9a7b32;
+}
+
+main a:hover {
+    color: #222222;
+}
+
+footer {
+    background-color: #9b3f4e;
+    color: #ffffff;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+footer p {
+    color: #ffffff;
+    margin: 8px 0;
+}
+
+footer a, footer a:link, footer a:visited, footer a:active {
+    color: #ffffff !important;
+    text-decoration: none !important;
+    margin: 0 10px;
+}
+
+footer a:hover, footer a:focus {
+    color: #b59a5a !important;
+    text-decoration: none !important;
+}
+
+/* דף הבית */
+#welcome {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    min-height: 500px;
+    padding: 30px 40px;
+}
+
+.welcome-text {
+    flex: 0.8;
+    position: relative;
+    bottom: 70px;
+}
+
+.welcome-text h1 {
+    font-family: "Playpen Sans Hebrew", sans-serif;
+    font-size: 64px;
+    font-weight: 500;
+    color: #9b3f4e;
+    margin-bottom: 15px;
+}
+
+.welcome-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.welcome-text p {
+    line-height: 1.8;
+}
+
+.welcome-image {
+    flex: 1.4;
+    text-align: center;
+}
+
+.welcome-image img {
+    width: 550px;
+    max-width: 100%;
+    height: auto;
+}
+
+.main-button {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 14px 42px;
+    background-color: #222222;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 17px;
+    transition: 0.3s;
+}
+
+.main-button:hover {
+    background-color: #9b3f4e;
+    color: #ffffff;
+    position: relative;
+    bottom: 2px;
+}
+
+/* פירורי לחם */
+.breadcrumbs {
+    max-width: 900px;
+    margin: 20px auto 0;
+    padding: 0 20px;
+    text-align: right;
+    font-size: 14px;
+}
+
+.breadcrumbs a {
+    color: #9a7b32;
+    text-decoration: none;
+}
+
+.breadcrumbs a:hover {
+    text-decoration: underline;
+}
+
+/* אודות */
+#about-page {
+    max-width: 1180px;
+    margin: 0 auto 80px;
+    padding: 30px 40px;
+    box-sizing: border-box;
+}
+
+.about-intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 55px;
+    position: relative;
+    min-height: 370px;
+    margin: 30px auto 90px;
+    padding: 40px 0;
+    box-sizing: border-box;
+}
+
+.about-intro-text {
+    width: 58%;
+    max-width: 720px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-intro-text h1 {
+    font-family: "Playpen Sans Hebrew", sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    color: #9b3f4e;
+    margin: 0 0 25px;
+    text-align: center;
+}
+
+.about-intro-text p {
+    font-size: 18px;
+    line-height: 2;
+    margin: 0 0 18px;
+    text-align: center;
+}
+
+.about-intro-image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 220px;
+    text-align: center;
+    bottom: 0;
+    height: fit-content;
+    margin: auto 0;
+}
+
+.about-intro-image img {
+    width: 300px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.team-section {
+    margin: 20px 0 100px;
+    text-align: center;
+}
+
+.team-section h2 {
+    font-family: "Playpen Sans Hebrew", sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    color: #9b3f4e;
+    margin: 0 0 20px;
+}
+
+.team-intro {
+    max-width: 780px;
+    margin: 0 auto 50px;
+    font-size: 17px;
+    line-height: 1.9;
+    text-align: center;
+}
+
+.team-members {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 70px;
+}
+
+.team-member {
+    width: 220px;
+    text-align: center;
+    position: relative;
+}
+
+.team-member img {
+    width: 190px;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 18px;
+    position: relative;
+    z-index: 2;
+    border: 4px solid #e5a6b2;
+}
+
+.team-member::before {
+    content: "";
+    position: absolute;
+    width: 205px;
+    height: 205px;
+    left: 0;
+    border: 2px dashed #d98d9e;
+    border-radius: 50%;
+    animation: teamCircle 8s linear infinite;
+    right: 0;
+    margin: 0 auto;
+    bottom: calc(100% - 201px);
+}
+
+.team-member::after {
+    content: "✦";
+    position: absolute;
+    left: 38px;
+    color: #c9647b;
+    font-size: 20px;
+    animation: teamSparkle 2s ease-in-out infinite;
+    bottom: calc(100% - 8px);
+    line-height: 1;
+}
+
+.team-member h3 {
+    margin: 0;
+    font-size: 20px;
+    color: #9b3f4e;
+}
+
+.developed-pages {
+    margin: 20px 0 100px;
+    text-align: center;
+}
+
+.developed-pages h2 {
+    font-family: "Playpen Sans Hebrew", sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    color: #9b3f4e;
+    margin: 0 0 40px;
+}
+
+.pages-list {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: right;
+}
+
+.pages-list ul {
+    margin: 0;
+    padding-right: 25px;
+}
+
+.pages-list li {
+    margin-bottom: 14px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.pages-list li::marker {
+    color: #9b3f4e;
+}
+
+.pages-list a {
+    color: #9b3f4e;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.pages-list a:hover {
+    color: #7f3040;
+}
+
+.hit-section {
+    margin-top: 60px;
+    padding-top: 40px;
+    text-align: center;
+    border-top: 1px solid #e3c1c8;
+}
+
+.hit-section h2 {
+    font-family: "Playpen Sans Hebrew", sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    color: #9b3f4e;
+    margin: 0 0 12px;
+}
+
+.hit-section p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #222222;
+    margin: 0 0 22px;
+}
+
+.hit-section a {
+    display: inline-block;
+}
+
+.hit-section img {
+    width: 190px;
+    height: auto;
+    display: block;
+    margin: 20px auto 0;
+    background-color: transparent;
+    transition: transform 0.3s ease;
+}
+
+.hit-section img:hover {
+    transform: scale(1.05);
+}
+
+/* צור קשר */
+#contact-page {
+    max-width: 780px;
+    margin: 0 auto 80px;
+    padding: 20px 30px;
+    box-sizing: border-box;
+    text-align: right;
+    position: relative;
+}
+
+#contact-page h1 {
+    font-family: "Playpen Sans Hebrew", sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    color: #9b3f4e;
+    text-align: center;
+    margin: 20px 0 18px;
+}
+
+#contact-page > p {
+    max-width: 650px;
+    margin: 0 auto 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+#contact-page form {
+    position: relative;
+    background-color: #fff7f8;
+    border: 1px solid #e6bdc5;
+    border-radius: 24px;
+    padding: 35px 40px;
+    box-sizing: border-box;
+}
+
+#contact-page form::before {
+    content: "";
+    position: absolute;
+    top: 80px;
+    width: 155px;
+    height: 155px;
+    background-image: url("../Images/flower1.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.75;
+    pointer-events: none;
+    right: calc(100% - 5px);
+}
+
+#contact-page label {
+    display: block;
+    margin-top: 18px;
+    margin-bottom: 8px;
+    font-size: 17px;
+    font-weight: bold;
+    color: #222222;
+}
+
+#contact-page input, #contact-page select, #contact-page textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 13px 15px;
+    border: 1px solid #d8b5bd;
+    border-radius: 12px;
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    outline: none;
+}
+
+#contact-page input:focus, #contact-page select:focus, #contact-page textarea:focus {
+    border-color: #9b3f4e;
+}
+
+#contact-page textarea {
+    resize: vertical;
+}
+
+#contact-page .contact-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: fit-content;
+    cursor: pointer;
+}
+
+#contact-page .contact-checkbox input[type="checkbox"] {
+    width: auto;
+    margin: 0;
+    padding: 0;
+}
+
+#contact-page input[type="submit"] {
+    width: auto;
+    display: block;
+    margin: 28px auto 0;
+    padding: 14px 42px;
+    background-color: #9b3f4e;
+    color: #ffffff;
+    border: none;
+    border-radius: 30px;
+    font-size: 17px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+#contact-page input[type="submit"]:hover {
+    background-color: #7f3040;
+    position: relative;
+    bottom: 4px;
+}
+
+/* מפת האתר */
+#site-map-page {
+    max-width: 900px;
+    margin: 40px auto 90px;
+    padding: 20px 30px;
+    box-sizing: border-box;
+    text-align: right;
+    position: relative;
+}
+
+#site-map-page::before {
+    content: "";
+    position: absolute;
+    top: 180px;
+    width: 150px;
+    height: 150px;
+    background-image: url("../Images/flower2.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.85;
+    pointer-events: none;
+    right: calc(100% - 60px);
+}
+
+#site-map-page h1 {
+    font-family: "Playpen Sans Hebrew", sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+    color: #9b3f4e;
+    margin-bottom: 18px;
+}
+
+.site-map-intro {
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #222222;
+    margin-bottom: 45px;
+}
+
+.site-map-list {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: right;
+}
+
+.site-map-list ul {
+    padding-right: 30px;
+    margin: 0;
+}
+
+.site-map-list > ul > li {
+    margin-bottom: 22px;
+    font-size: 22px;
+    font-weight: 600;
+    color: #222222;
+}
+
+.site-map-list ul ul {
+    margin-top: 14px;
+    padding-right: 35px;
+}
+
+.site-map-list ul ul li {
+    margin-bottom: 12px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #222222;
+}
+
+.site-map-list a {
+    color: #222222;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.site-map-list a:hover {
+    color: #9b3f4e;
+    text-decoration: underline;
+}
+
+/* לוגו וניווט */
+.nav-logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-logo img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-left: 10px;
+}
+
+/* לוח התכנון בדף הבית */
+#timeline-home, .timeline-home-wrap {
+    max-width: 1180px;
+    margin: 0 auto 90px;
+    padding: 25px 20px 0;
+}
+
+.eyebrow {
+    color: #9b3f4e;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 6px;
+}
+
+#timeline-home h2 {
+    font-size: 40px;
+    margin: 0 0 12px;
+}
+
+.timeline-intro {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 40px;
+}
+
+/* עמודי התוכן */
+.timeline-period {
+    max-width: 1160px;
+    margin: 0 auto 85px;
+    padding: 10px 20px 30px;
+}
+
+.period-heading {
+    text-align: center;
+    max-width: 760px;
+    margin: 60px auto 40px;
+}
+
+.period-heading h1 {
+    color: #9b3f4e;
+    font-family: "Playpen Sans Hebrew", sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    margin: 0 0 10px;
+}
+
+.period-heading p {
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+.task-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px 28px;
+}
+
+.task-card {
+    min-height: 260px;
+    padding: 20px;
+    text-align: center;
+    background-color: transparent;
+    position: relative;
+}
+
+.task-card::before {
+    content: "✦";
+    position: absolute;
+    top: 5px;
+    left: calc(50% + 75px);
+    color: #f08aa8;
+    font-size: 26px;
+    line-height: 1;
+    animation: sparkleOne 1.8s ease-in-out infinite;
+}
+
+.task-card img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.poster-period {
+    background-color: #fff1f3;
+    padding: 55px 40px 80px;
+}
+
+.poster-period .period-heading {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.poster-period .period-heading h1 {
+    font-size: 42px;
+    margin-bottom: 12px;
+    color: #9b3f4e;
+}
+
+.poster-period .period-heading p {
+    font-size: 18px;
+}
+
+.poster-layout {
+    max-width: 1250px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 380px 1fr;
+    grid-template-areas: "leftOne couple rightOne" "leftTwo couple rightTwo" "leftThree couple rightThree";
+    column-gap: 60px;
+    row-gap: 40px;
+    align-items: center;
+}
+
+.poster-task .task-title {
+    font-size: 24px;
+    margin: 8px 0;
+}
+
+.poster-task p {
+    font-size: 16px;
+    line-height: 1.7;
+    margin: 0 auto;
+    max-width: 300px;
+}
+
+.poster-couple {
+    grid-area: couple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.poster-couple img {
+    width: 360px;
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    bottom: 120px;
+}
+
+.task-top-left {
+    grid-area: leftOne;
+}
+
+.task-top-center {
+    grid-area: rightOne;
+}
+
+.task-top-right {
+    grid-area: leftTwo;
+}
+
+.task-bottom-left {
+    grid-area: rightTwo;
+}
+
+.task-bottom-center {
+    grid-area: leftThree;
+}
+
+.task-bottom-right {
+    grid-area: rightThree;
+}
+
+/* הטופס האינטראקטיבי */
+#planning-tool {
+    max-width: 1200px;
+    margin: 40px auto 80px;
+    padding: 50px 45px;
+    background-color: #ffc5c7;
+    border-radius: 30px;
+    text-align: center;
+}
+
+#planning-tool h1 {
+    font-family: "Playpen Sans Hebrew", sans-serif;
+    font-size: 48px;
+    font-weight: 600;
+    color: #9b3f4e;
+    margin: 0 0 40px;
+}
+
+.checklist-layout {
+    display: flex;
+    gap: 45px;
+    align-items: flex-start;
+    text-align: right;
+}
+
+.tool-form {
+    width: 58%;
+}
+
+.tool-visuals {
+    width: 42%;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.tool-form > label {
+    display: block;
+    color: #9b3f4e;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#coupleNames {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 14px 18px;
+    border: 1px solid #d9adb7;
+    border-radius: 16px;
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+    margin-bottom: 25px;
+}
+
+.role-choice {
+    border: none;
+    padding: 0;
+    margin: 0 0 25px;
+}
+
+.role-choice legend {
+    color: #9b3f4e;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.role-choice label {
+    display: inline-block;
+    min-width: 110px;
+    margin-left: 10px;
+    padding: 12px 18px;
+    background-color: #ffffff;
+    border: 1px solid #ecd5da;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+.role-choice label:hover {
+    background-color: #fff3f5;
+}
+
+.role-choice input {
+    accent-color: #9b3f4e;
+    margin-left: 6px;
+}
+
+.mini-checklist {
+    display: block;
+    margin-top: 25px;
+}
+
+.mini-checklist h2 {
+    color: #222222;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.check-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+    border: 1px solid #ecd5da;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+.check-item:hover {
+    background-color: #fff7f8;
+}
+
+.check-item input {
+    accent-color: #9b3f4e;
+}
+
+.check-item img {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+    opacity: 0.4;
+    transition: opacity 0.25s;
+}
+
+.check-item span {
+    font-size: 17px;
+}
+
+#roleHint {
+    color: #9b3f4e;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+#timelineSubmit {
+    display: block;
+    margin: 25px auto 0;
+    border: none;
+    border-radius: 30px;
+    padding: 14px 34px;
+    background-color: #9b3f4e;
+    color: #ffffff;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+#timelineSubmit:hover {
+    background-color: #7f3040;
+}
+
+#timelineSubmit:disabled {
+    background-color: #cbb9bd;
+    cursor: not-allowed;
+}
+
+#timelineSummary {
+    display: block;
+    margin-top: 25px;
+    padding: 22px;
+    background-color: #fffafb;
+    border: 1px solid #e8c7cf;
+    border-radius: 22px;
+    text-align: right;
+    line-height: 1.8;
+}
+
+#timelineSummary h3 {
+    color: #9b3f4e;
+    margin-top: 0;
+}
+
+.poster-task::before {
+    opacity: 0.55;
+    transform: none;
+    content: "✦";
+    position: absolute;
+    width: auto;
+    height: auto;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    background: none;
+    top: 5px;
+    left: calc(50% + 75px);
+    color: #f08aa8;
+    font-size: 26px;
+    line-height: 1;
+    animation: sparkleOne 1.8s ease-in-out infinite;
+}
+
+.poster-task img {
+    width: 190px;
+    height: 190px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 12px;
+    position: relative;
+    z-index: 2;
+}
+
+.poster-task {
+    position: relative;
+    text-align: center;
+}
+
+.poster-task::after {
+    content: "✦";
+    position: absolute;
+    width: auto;
+    height: auto;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    background: none;
+    top: 55px;
+    right: calc(50% + 75px);
+    color: #f6b8c8;
+    font-size: 18px;
+    line-height: 1;
+    animation: sparkleTwo 2.2s ease-in-out infinite;
+}
+
+/* שלבי התכנון הפרחוניים */
+.flowers-timeline {
+    max-width: 1150px;
+    margin: 55px auto 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 25px;
+    position: relative;
+}
+
+.flowers-timeline::before {
+    content: "";
+    position: absolute;
+    top: 72px;
+    right: 8%;
+    left: 8%;
+    height: 2px;
+    background-color: #d9a1ad;
+    z-index: 0;
+}
+
+.flower-item {
+    width: 240px;
+    text-align: center;
+    text-decoration: none;
+    color: #222222;
+    position: relative;
+    z-index: 1;
+    transition: bottom 0.3s ease;
+}
+
+.flower-item:hover {
+    color: #222222;
+    position: relative;
+    bottom: 7px;
+}
+
+.flower-item img {
+    width: 145px;
+    height: 145px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 14px;
+}
+
+.flower-item span {
+    display: block;
+    color: #9b3f4e;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+.flower-item strong {
+    display: block;
+    color: #222222;
+    font-size: 21px;
+    margin-bottom: 8px;
+}
+
+.flower-item small {
+    display: block;
+    color: #666666;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.flower-item::after {
+    content: "✦";
+    position: absolute;
+    top: 5px;
+    left: 35px;
+    color: #e79aaa;
+    font-size: 18px;
+    animation: flowerSparkle 2.2s ease-in-out infinite;
+}
+
+/* מצבי רכיבים ונגישות */
+[hidden] {
+    display: none !important;
+}
+
+.check-item img.is-complete {
+    opacity: 1;
+}
+
+.task-card .task-title {
+    font-size: 1.17em;
+    margin: 1em 0;
+}
+
+.form-note {
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 0 0 15px;
+}
+
+#contactStatus {
+    line-height: 1.7;
+}
+
+.tool-form, .tool-visuals {
+    min-width: 0;
+}
+
+a[aria-disabled="true"] {
+    cursor: not-allowed;
+}
+
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible, #contact-page input:focus-visible, #contact-page select:focus-visible, #contact-page textarea:focus-visible {
+    outline: 2px solid #222222;
+    outline-offset: 3px;
+}
+
+.role-image, .task-preview {
+    display: block;
+    width: 100%;
+    max-width: 380px;
+    height: 380px;
+    object-fit: contain;
+    margin: 0 auto;
+}
+
+/* אנימציות */
+@keyframes teamCircle {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes teamSparkle {
+    0% {
+        opacity: 0.3;
+        transform: scale(0.8);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.2);
+    }
+
+    100% {
+        opacity: 0.3;
+        transform: scale(0.8);
+    }
+}
+
+@keyframes sparkleOne {
+    0% {
+        opacity: 0.2;
+        transform: scale(0.6) rotate(0deg);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.3) rotate(20deg);
+    }
+
+    100% {
+        opacity: 0.2;
+        transform: scale(0.6) rotate(0deg);
+    }
+}
+
+@keyframes sparkleTwo {
+    0% {
+        opacity: 0.3;
+        transform: scale(0.7);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.2);
+    }
+
+    100% {
+        opacity: 0.3;
+        transform: scale(0.7);
+    }
+}
+
+@keyframes flowerSparkle {
+    0% {
+        opacity: 0.3;
+        transform: scale(0.7);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.2);
+    }
+
+    100% {
+        opacity: 0.3;
+        transform: scale(0.7);
+    }
+}
+
+/* התאמות למסכים קטנים */
+@media (max-width: 900px) {
+    .about-intro-text {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .about-intro-image img {
+        width: 220px;
+    }
+
+    .about-intro {
+        gap: 30px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-intro-text h1 {
+        font-size: 36px;
+    }
+
+    .about-intro-image {
+        justify-content: center;
+        transform: none;
+        width: 100%;
+        position: static;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .team-section h2, .developed-pages h2 {
+        font-size: 36px;
+    }
+
+    .team-members {
+        flex-direction: column;
+        align-items: center;
+        gap: 35px;
+    }
+
+    #contact-page form::before {
+        display: none;
+    }
+
+    #contact-page {
+        padding: 20px;
+    }
+
+    #contact-page form {
+        padding: 25px;
+    }
+
+    #contact-page h1 {
+        font-size: 32px;
+    }
+
+    #planning-tool h1 {
+        font-size: 38px;
+    }
+
+    .main-nav {
+        flex-direction: column;
+    }
+
+    .main-nav ul {
+        justify-content: center;
+        transform: none;
+    }
+
+    #welcome {
+        flex-direction: column;
+    }
+
+    .welcome-image, .welcome-text {
+        width: 100% !important;
+    }
+
+    .welcome-image img {
+        width: 100%;
+        max-width: 650px;
+    }
+
+    .task-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .checklist-layout {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .tool-form, .tool-visuals {
+        width: 100%;
+    }
+
+    .poster-layout {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "couple couple" "leftOne rightOne" "leftTwo rightTwo" "leftThree rightThree";
+        gap: 30px;
+    }
+
+    .poster-couple img {
+        bottom: 0;
+        width: 260px;
+    }
+
+    .flowers-timeline {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .flowers-timeline::before {
+        display: none;
+    }
+
+    .welcome-text {
+        bottom: 0;
+    }
+}
+
+@media (max-width: 1000px) {
+    #site-map-page::before {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    #site-map-page {
+        padding: 20px;
+    }
+
+    #site-map-page h1 {
+        font-size: 40px;
+    }
+
+    .site-map-list > ul > li {
+        font-size: 20px;
+    }
+
+    .site-map-list ul ul li {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 600px) {
+    #welcome {
+        padding: 25px 15px;
+        gap: 20px;
+    }
+
+    .welcome-text h1 {
+        font-size: 42px;
+    }
+
+    #planning-tool {
+        padding: 30px 20px;
+    }
+
+    #planning-tool h1 {
+        font-size: 32px;
+    }
+
+    .poster-period {
+        padding: 30px 20px;
+    }
+
+    .poster-layout {
+        grid-template-columns: 1fr;
+        grid-template-areas: "couple" "rightOne" "leftOne" "rightTwo" "leftTwo" "rightThree" "leftThree";
+    }
+
+    .task-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .role-choice label {
+        box-sizing: border-box;
+        min-width: 0;
+        margin-bottom: 10px;
+    }
+
+    .main-nav {
+        padding: 12px;
+    }
+
+    .main-nav ul a {
+        padding: 12px 8px;
+    }
+
+    .role-image, .task-preview {
+        height: 280px;
+    }
+
+    .poster-period .period-heading h1 {
+        font-size: 32px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation: none !important;
+        transition: none !important;
+    }
+}

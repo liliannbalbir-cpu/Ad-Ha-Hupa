@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>לקראת החופה - עד החופה</title>
+
+    <meta name="description"
+          content="המשימות האחרונות לקראת החופה ויום החתונה." />
+
+    <meta name="keywords"
+          content="חתונה, תכנון חתונה, לקראת החופה, שבועות לפני החתונה" />
+
+    <meta name="author"
+          content="אנסטסיה ניקולאיבה, ליליאן בלביר, יוליה פשניצניקוב" />
+
+    <link rel="icon"
+          type="image/png"
+          href="Images/logo_rings.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans+Hebrew:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+    
+    <link href="styles/myStyle.css"
+          rel="stylesheet" />
+</head>
+
+<body>
+
+<div id="container">
+
+    <!-- ניווט ראשי -->
+    <header class="site-header">
+    <nav class="main-nav" aria-label="ניווט ראשי">
+
+        <a href="index.html" class="nav-logo">
+
+            <span>עד החופה</span>
+
+            <img src="Images/logoRings.webp"
+                 alt="לוגו עד החופה"
+                 title="עד החופה">
+
+        </a>
+
+        <ul>
+
+            <li>
+                <a href="index.html">דף הבית</a>
+            </li>
+
+            <li>
+                <a href="fourSixMonths.html">
+                    6–4 חודשים לפני
+                </a>
+            </li>
+
+            <li>
+                <a href="twoFourMonths.html">
+                    4–2 חודשים לפני
+                </a>
+            </li>
+
+            <li>
+                <a href="#" aria-disabled="true" title="עמוד זה עדיין לא פותח">
+                    2–1 חודשים לפני
+                </a>
+            </li>
+
+            <li>
+                <a href="finalWeeks.html">
+                    לקראת החופה
+                </a>
+            </li>
+
+            <li>
+                <a href="about.html">
+                    אודות
+                </a>
+            </li>
+
+            <li>
+                <a href="contactUs.html">
+                    צור קשר
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+    </header>
+
+    <main>
+
+        <!-- פירורי לחם -->
+        <nav class="breadcrumbs" aria-label="מיקום באתר">
+
+            <a href="index.html">
+                דף הבית
+            </a>
+
+            <span> &gt; </span>
+
+            <span>
+                לקראת החופה
+            </span>
+
+        </nav>
+
+        <!-- כלי הצ'ק ליסט -->
+        <section id="planning-tool">
+
+            <h1 class="checklist-title">
+                צ'ק ליסט ליום החתונה
+            </h1>
+
+            <div class="checklist-layout">
+
+                <!-- צד הטופס -->
+                <form class="tool-form" id="checklistForm">
+
+                    <label for="coupleNames">
+                        איך קוראים לכם? *
+                    </label>
+
+                    <input type="text"
+                           id="coupleNames" name="coupleNames" required
+                           placeholder="לדוגמה: דנה ויואב">
+
+                    <!-- בחירת כלה / חתן -->
+                    <fieldset class="role-choice">
+
+                        <legend>
+                            איזה צ'ק ליסט תרצו לפתוח? *
+                        </legend>
+
+                        <label>
+
+                            <input type="radio"
+                                   name="checklistType" required
+                                   value="כלה"
+                                   data-image="brideIllustration"
+                                   data-panel="brideChecklist">
+
+                            כלה
+
+                        </label>
+
+                        <label>
+
+                            <input type="radio"
+                                   name="checklistType" required
+                                   value="חתן"
+                                   data-image="groomIllustration"
+                                   data-panel="groomChecklist">
+
+                            חתן
+
+                        </label>
+
+                    </fieldset>
+
+                    <!-- ====================== -->
+                    <!-- צ'ק ליסט לכלה -->
+                    <!-- ====================== -->
+
+                    <div id="brideChecklist"
+                         class="mini-checklist">
+
+                        <h2>
+                            הצ'ק ליסט של הכלה
+                        </h2>
+
+                        <!-- שמלה -->
+                        <label class="check-item">
+
+                            <input type="checkbox"
+                                   name="doneTask"
+                                   value="שמלה"
+                                   data-for="כלה"
+                                   data-icon="brideDressIcon"
+                                   data-preview="brideDressPreview">
+
+                            <img id="brideDressIcon" src="Images/brideDress.webp" alt="שמלה">
+
+                            <span>
+                                שמלה
+                            </span>
+
+                        </label>
+
+                        <!-- איפור -->
+                        <label class="check-item">
+
+                            <input type="checkbox"
+                                   name="doneTask"
+                                   value="איפור וטאצ' אפ"
+                                   data-for="כלה"
+                                   data-icon="brideMakeupIcon"
+                                   data-preview="brideMakeupPreview">
+
+                            <img id="brideMakeupIcon" src="Images/brideMakeup.webp" alt="איפור וטאצ׳ אפ">
+
+                            <span>
+                                איפור וטאצ' אפ
+                            </span>
+
+                        </label>
+
+                        <!-- תכשיטים ואביזרים -->
+                        <label class="check-item">
+
+                            <input type="checkbox"
+                                   name="doneTask"
+                                   value="תכשיטים ואביזרים"
+                                   data-for="כלה"
+                                   data-icon="brideHeartIcon"
+                                   data-preview="brideAccessoriesPreview">
+
+                            <img id="brideHeartIcon" src="Images/brideAccessories.webp" alt="תכשיטים ואביזרים">
+
+                            <span>
+                                תכשיטים ואביזרים
+                            </span>
+
+                        </label>
+
+                        <!-- מסמכים -->
+                        <label class="check-item">
+
+                            <input type="checkbox"
+                                   name="doneTask"
+                                   value="מסמכים חשובים"
+                                   data-for="כלה"
+                                   data-icon="brideDocumentsIcon"
+                                   data-preview="brideDocumentsPreview">
+
+                            <img id="brideDocumentsIcon" src="Images/DocumentsGroom.webp" alt="מסמכים חשובים">
+
+                            <span>
+                                מסמכים חשובים
+                            </span>
+
+                        </label>
+
+                    </div>
+
+                    <!-- ====================== -->
+                    <!-- צ'ק ליסט לחתן -->
+                    <!-- ====================== -->
+
+                    <div id="groomChecklist"
+                         class="mini-checklist">
+
+                        <h2>
+                            הצ'ק ליסט של החתן
+                        </h2>
+
+                        <!-- חליפה ונעליים -->
+                        <label class="check-item">
+
+                            <input type="checkbox"
+                                   name="doneTask"
+                                   value="חליפה"
+                                   data-for="חתן"
+                                   data-icon="groomSuitIcon"
+                                   data-preview="groomCostumePreview">
+
+                            <img id="groomSuitIcon" src="Images/CostumeGroom.webp" alt="חליפה">
+
+                            <span>
+                                חליפה 
+                            </span>
+
+                        </label>
+
+                        <!-- טבעות -->
+                        <label class="check-item">
+
+                            <input type="checkbox"
+                                   name="doneTask"
+                                   value="הטבעות"
+                                   data-for="חתן"
+                                   data-icon="groomRingsIcon"
+                                   data-preview="groomRingsPreview">
+
+                            <img id="groomRingsIcon" src="Images/RingsGroom.webp" alt="טבעות">
+
+                            <span>
+                                הטבעות
+                            </span>
+
+                        </label>
+
+                        <!-- מסמכים -->
+                        <label class="check-item">
+
+                            <input type="checkbox"
+                                   name="doneTask"
+                                   value="מסמכים חשובים"
+                                   data-for="חתן"
+                                   data-icon="groomDocumentsIcon"
+                                   data-preview="groomDocumentsPreview">
+
+                            <img id="groomDocumentsIcon" src="Images/DocumentsGroom.webp" alt="מסמכים חשובים">
+
+                            <span>
+                                מסמכים חשובים
+                            </span>
+
+                        </label>
+
+                        <!-- שעון ואביזרים -->
+                        <label class="check-item">
+
+                            <input type="checkbox"
+                                   name="doneTask"
+                                   value="שעון ואביזרים"
+                                   data-for="חתן"
+                                   data-icon="groomCarIcon"
+                                   data-preview="groomAccessoriesPreview">
+
+                            <img id="groomCarIcon" src="Images/AccessoriesGroom.webp" alt="שעון ואביזרים">
+
+                            <span>
+        שעון ואביזרים
+    </span>
+
+                        </label>
+
+                    </div>
+
+                    <!-- כפתור -->
+                    <button type="submit"
+                            id="timelineSubmit"
+                            disabled>
+
+                        בדוק את עצמך
+
+                    </button>
+
+                </form>
+
+                <!-- ====================== -->
+                <!-- הצד הוויזואלי -->
+                <!-- ====================== -->
+
+                <div class="tool-visuals">
+
+                    <p id="roleHint">
+
+                        בחר/י אם את/ה הכלה או החתן כדי לפתוח את הצ'ק ליסט
+
+                    </p>
+
+                    <!-- כלה -->
+                    <img id="brideIllustration"
+                         class="role-image" hidden
+                         src="Images/brideChecklist.webp"
+                         alt="איור של כלה"
+                         title="צ'ק ליסט לכלה">
+
+                    <!-- תמונת שמלה -->
+                    <img id="brideDressPreview"
+                         class="task-preview" hidden
+                         src="Images/brideDress.webp"
+                         alt="שמלה">
+
+                    <img id="brideMakeupPreview"
+                         class="task-preview" hidden
+                         src="Images/brideMakeup.webp"
+                         alt="איפור וטאצ' אפ">
+
+                    <img id="brideAccessoriesPreview"
+                         class="task-preview" hidden
+                         src="Images/brideAccessories.webp"
+                         alt="תכשיטים ואביזרים">
+
+                    <img id="brideDocumentsPreview"
+                         class="task-preview" hidden
+                         src="Images/DocumentsGroom.webp"
+                         alt="מסמכים חשובים">
+
+                    <img id="groomCostumePreview"
+                         class="task-preview" hidden
+                         src="Images/CostumeGroom.webp"
+                         alt="חליפה">
+
+                    <img id="groomRingsPreview"
+                         class="task-preview" hidden
+                         src="Images/RingsGroom.webp"
+                         alt="הטבעות">
+
+                    <img id="groomDocumentsPreview"
+                         class="task-preview" hidden
+                         src="Images/DocumentsGroom.webp"
+                         alt="מסמכים חשובים">
+
+                    <img id="groomAccessoriesPreview"
+                         class="task-preview" hidden
+                         src="Images/AccessoriesGroom.webp"
+                         alt="שעון ואביזרים">
+
+                    <!-- חתן -->
+                    <img id="groomIllustration"
+                         class="role-image" hidden
+                         src="Images/groomChecklist.webp"
+                         alt="איור של חתן"
+                         title="צ'ק ליסט לחתן">
+
+                    <!-- סיכום -->
+                    <div id="timelineSummary" role="status" aria-live="polite" aria-atomic="true" hidden></div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            עד החופה | מתכננים את הדרך לחופה
+        </p>
+
+        <nav>
+
+            <a href="about.html">
+                אודות
+            </a>
+
+            <a href="contactUs.html">
+                צור קשר
+            </a>
+
+            <a href="siteMap.html">
+                מפת האתר
+            </a>
+
+        </nav>
+
+    </footer>
+
+</div>
+
+<script src="jScripts/timeline.js" defer></script>
+
+<script src="jScripts/site.js" defer></script>
+</body>
+
+</html>
